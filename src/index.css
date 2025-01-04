@@ -6,21 +6,25 @@ html, body{
     background-color: #F2FFFF;
     height: 100vh;
     font-family: "Inter", serif;
+    font-weight: 700;
 }
 
 #root{
     height: 100%;
 }
 
+.submit-button, input{
+    font-size: 1.5625rem;
+}
+
 .submit-button{
     border: 4px solid black;
     border-radius: 40px;
     background-color: #4BDCB0;
-    font-weight: 700;
-    font-size: 1.5625rem;
     min-width: 290px;
     padding: .5em;
     cursor: pointer;
+    font-weight: inherit;
 }
 
 .submit-button:hover{
@@ -31,10 +35,35 @@ html, body{
     box-shadow: inset 0px 0px 20px black;
 }
 
-.layout{
+.layout, .trip-form{
     display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+.layout{
     height: 100%;
+    justify-content: center;
+}
+
+.trip-form{
+    max-width: 320px;
+    margin-bottom: auto;
+}
+
+input{
+    border: 4px solid black;
+    border-radius: 40px;
+    background-color: inherit;
+    text-align: center;
+    width: 85%;
+    padding: .3em;
+    font-weight: inherit;
+}
+
+input.traveller-input::-webkit-inner-spin-button{
+    display: none;
+}
+
+label{
+    font-size: 1.375rem;
 }

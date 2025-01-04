@@ -1,0 +1,8 @@
+.to-from-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    text-transform: capitalize;
+    margin-top: 3.125em;
+}

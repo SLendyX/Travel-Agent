@@ -8,9 +8,17 @@ export default function({name, reverse=false, input1, input2, ...props}){
     return (
         <div className="to-from-container">
             <label htmlFor={from.replace(" ", "-")}>{from}</label>
-            <input {...props} {...input1} id={from.replace(" ", "-")}/>
+            <input {...props} 
+            {...input1} 
+            id={from.replace(" ", "-")}
+            name={`from-${name}`}
+            />
             <label htmlFor={to.replace(" ", "-")}>{to}</label>
-            <input {...props} {...input2} id={to.replace(" ", "-")}/>
+            <input {...props} 
+                {...input2} 
+                id={to.replace(" ", "-")}
+                name={`to-${name}`}
+            />
         </div>
     )
 }

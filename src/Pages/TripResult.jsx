@@ -1,5 +1,5 @@
 import React from "react";
-import { OpenaiObject, getOpenai} from '../../openai-proxy/dist/index.js'
+import { OpenaiObject, getOpenai} from '../../openai-proxy/index.js'
 import { useLocation, useSearchParams } from "react-router";
 import { tools, getWeather } from "../functions/functions";
 import { Link } from "react-router-dom";

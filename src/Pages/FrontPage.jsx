@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 export default function(){
     return (
         <>
-            <img className="logo" src={cat} alt="cat photo"/>
-            <Link to="plan-trip">
-                <button className="submit-button">Let's Begin</button>
-            </Link>
+            <div className="front-container">
+                <img className="logo" src={cat} alt="cat photo"/>
+                <Link to="plan-trip">
+                    <button className="submit-button">Let's Begin</button>
+                </Link>
+            </div>
         </>
     )
 }

@@ -76,9 +76,10 @@ export default function(){
             
             {inputsArray.map((input, index) => <ToFromInputs key={index} {...input}/>)}
 
-            <label htmlFor="budget">Budget</label>
+            <label className="budget-label" htmlFor="budget">Budget</label>
             <input 
                 id="budget" 
+                className="budget"
                 value={"$ "+ budget} 
                 onChange={changeBudget} 
                 name="budget" 

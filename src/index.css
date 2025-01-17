@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -11,6 +15,12 @@ html, body{
 
 #root{
     height: 100%;
+}
+
+.front-container{
+    margin: 0 auto;
+    width: min-content;
+    text-align: center;
 }
 
 .submit-button, input{
@@ -36,18 +46,22 @@ html, body{
 }
 
 .layout, .trip-form{
-    display: flex; 
-    flex-direction: column;
+    display: grid; 
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
+    justify-items: center;
+    
 }
 .layout{
     height: 100%;
     justify-content: center;
+    padding-bottom: 1em;
 }
 
 .trip-form{
     max-width: 320px;
     margin-bottom: auto;
+    margin-top: 2em;
 }
 
 input{
@@ -71,4 +85,77 @@ label{
 
 .to-from-container{
     width: 100%;
+}
+
+.budget{
+    margin-bottom: .5em;
+}
+
+.budget-label{
+    margin-top: 1em;
+}
+
+.output-container{
+    background-color: #BBF7F7;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 1em .75em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+}
+
+.output-container.date{
+    width: fit-content;
+}
+
+.output-container > p, .output-container > h3, .output-container.date > p{
+    margin: 0;
+}
+
+.output-container > p {
+    margin-bottom: .75em;
+}
+
+.output-container > h3{
+    font-size: 1.5625rem;
+}
+
+.date-container{
+    display: flex;
+    gap:1em;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+}
+
+h2{
+    margin: 0;
+}
+
+.info-containers > h2{
+    text-align: center;
+}
+
+.info-containers{
+    width: 80%;
+    max-width: 350px;
+}
+
+.info-containers > .output-container{
+    width: 100%;
+}
+
+.output-container > .submit-button{
+    --height: .2em;
+    padding-top: var(--height);
+    padding-bottom: var(--height);
+
+}
+
+.go-back{
+    position: absolute;
+    top:0;
+    left: 0;
 }

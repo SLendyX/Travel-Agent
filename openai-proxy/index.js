@@ -7,7 +7,7 @@ export function OpenaiObject(method = "", model = "", data = {}){
 }
 
 export async function getOpenai(object){
-    const url = process.env.openai
+    const url = process.env.OPENAI
 
     const response = await fetch(url, {
         method:'POST',

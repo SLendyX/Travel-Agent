@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "netlify-cli": "^18.0.1",
     "openai": "^4.78.1",
     "openai-proxy": "file:../../Libraries/OpenAI",
     "react": "^18.3.1",

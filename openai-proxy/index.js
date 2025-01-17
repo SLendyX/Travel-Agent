@@ -7,7 +7,7 @@ export function OpenaiObject(method = "", model = "", data = {}){
 }
 
 export async function getOpenai(object){
-    const url = process.env.OPENAI
+    const url = "https://openai-api-worker.slendyx2002.workers.dev/"
 
     const response = await fetch(url, {
         method:'POST',

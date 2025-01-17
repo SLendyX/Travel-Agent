@@ -1,6 +1,6 @@
 export async function getWeather({location}){
     try{
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.WEATHER}`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=af5d78c4b9bd54d41e5c3a6f817ad001`
         const response = await fetch(url)
         const data = await response.json()
 
